@@ -36,4 +36,4 @@ jobs:
         run: docker tag my-python-app:latest 284441042484.dkr.ecr.us-east-1.amazonaws.com/my-python-app:latest
 
       - name: Push Docker image to Amazon ECR
-        run: docker push 284441042484.dkr.ecr.us-east-1.amazonaws.com/my-python-app:latest
+        run: docker push 284441042484.dkr.ecr.us-east-1.amazonaws.com/my-python-app
