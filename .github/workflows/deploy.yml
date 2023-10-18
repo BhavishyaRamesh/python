@@ -33,4 +33,4 @@ jobs:
         run: docker build -t my-python-app .
 
       - name: Push Docker image to Amazon ECR
-        run: docker push 284441042484.dkr.ecr.us-east-1.amazonaws.com/my-python-app
+        run: docker push my-python-app
