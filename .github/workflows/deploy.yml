@@ -16,12 +16,12 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: AKIAUEOQB3Y2KJXDUQX6
-          aws-secret-access-key: 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
+          aws-access-key-id: AKIAUEOQB3Y2BYID5SFF
+          aws-secret-access-key: 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
           aws-region: us-east-1
 
       - name: Login to Amazon ECR
-        run: $(aws ecr get-login --no-include-email --region us-east-1
+        run: $(aws ecr get-login --no-include-email --region us-east-1)
 
       - name: Build Docker image
         run: docker build -t my-python-app .
